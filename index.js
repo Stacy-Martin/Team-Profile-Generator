@@ -130,7 +130,7 @@ const generateHTML = (answers) =>
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!-- my CSS stylesheet link -->
   <link rel="stylesheet" href="CSS/style.css"/>
-  <title>Team Profile Generator</title>
+  <title>Team Profile</title>
 </head>
 
 <body>
