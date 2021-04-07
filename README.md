@@ -3,7 +3,7 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
-
+Company manager's are often juggling an overwhelming amount of tasks at once. This team profile generator allows a simple, streamlined webpage so managers can have quick access to employee information.  Employees simply input their profile info into this handy command line application and bam, their manager has one less thing to do that day!
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,13 +14,15 @@
 * [Preview](#preview)
 
 ## Installation
-Some dependencies are necessary, execute the following command for proper functioning:
+To install necessary dependencies, run the following command:
 ~~~
 npm i
+install jest
+install inquirer
 ~~~
 
 ## Usage
-First open the applications directory in the terminal, run nmp install, and then begin inputting user data by entering  ` node . `.  After all user prompts are complete, the README file will be created in the same folder.
+First open the applications directory in the terminal and install the necessary dependencies.  Then begin inputting user data by entering  ` node . `.   After all employee prompts are complete, the HTML file will be generated.
 
 ## License 
 This project is licensed under the [License: Unlicense](http://unlicense.org/) license.
