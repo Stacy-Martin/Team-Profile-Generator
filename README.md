@@ -6,12 +6,15 @@
 Managers of software engineering teams are often juggling an overwhelming amount of tasks at once. This Team Profile Generator allows a simple, streamlined webpage so managers can have quick access to employee information.  Employees simply input their profile info into this handy command line application and BAM, the manager has one less thing to do that day!
 
 ## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributions](#contributions)
-* [Questions](#questions)
-* [Preview](#preview)
+- [Team Profile Generator](#team-profile-generator)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Questions](#questions)
+  - [Preview](#preview)
 
 ## Installation
 To install necessary dependencies, run the following command:
@@ -45,4 +48,4 @@ The following screenshot provides a preview of the Team Profile webpage that was
 Check out this video to see the app demo:
 XXXXXX
 
-Thanks to my study buddies ;) teacher, and incredible TA (Kat Poulos) for technical assistance - and many others for encouragement! 
+Thanks to my study buddies ;) teacher, and incredible TA (Katerina Poulos) for technical assistance - and many others for encouragement! 

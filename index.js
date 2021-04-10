@@ -71,7 +71,7 @@ const addManager = () => {
       },
       {
         type: "input",
-        name: "employeeID",
+        name: "id",
         message: "Employee ID:",
         validate: validateNumber,
       },
@@ -98,7 +98,7 @@ const addManager = () => {
       team.push(
         new Manager(
           answers.name,
-          answers.employeeID,
+          answers.id,
           answers.email,
           answers.officeNumber
         )
@@ -119,7 +119,7 @@ const moreTeamMembers = () => {
       },
       {
         type: "input",
-        name: "employeeID",
+        name: "id",
         message: "Employee ID:",
         validate: validateNumber,
       },
@@ -159,7 +159,7 @@ const moreTeamMembers = () => {
         team.push(
           new Engineer(
             answers.name,
-            answers.employeeID,
+            answers.id,
             answers.email,
             answers.github
           )
@@ -168,7 +168,7 @@ const moreTeamMembers = () => {
         team.push(
           new Intern(
             answers.name,
-            answers.employeeID,
+            answers.id,
             answers.email,
             answers.school
           )
@@ -228,7 +228,7 @@ const managerCard = (answers) => {
             <h1 class="name-header">${answers.name}</h1>
             <h2 class="role-header2">${answers.getRole()}</h2>
             <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${answers.employeeID}</li>
+                <li class="list-group-item">Employee ID: ${answers.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
                 <li class="list-group-item">Office Number: ${answers.officeNumber}</li>  
             </ul>
@@ -239,9 +239,9 @@ const engineerCard = (answers) => {
             <h1 class="name-header">${answers.name}</h1>
             <h2 class="role-header2">${answers.getRole()}</h2>
             <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${answers.employeeID}</li>
+                <li class="list-group-item">Employee ID: ${answers.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
-                <li class="list-group-item">GitHub Username: <a href= "https://github.com/${answers.github}" target="_blank">${answers.github}</a></li> 
+                <li class="list-group-item">GitHub Username: <a href= "https://github.com/${answers.gitHub}" target="_blank">${answers.gitHub}</a></li> 
             </ul>
         </div>`;
 };
@@ -250,7 +250,7 @@ const internCard = (answers) => {
             <h1 class="name-header">${answers.name}</h1>
             <h2 class="role-header2">${answers.role}</h2>
             <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${answers.employeeID}</li>
+                <li class="list-group-item">Employee ID: ${answers.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
                 <li class="list-group-item">School: ${answers.school}</li>  
             </ul>
