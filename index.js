@@ -1,7 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// QUESTION: do i use util?
-const util = require("util");
 // TODO: create tests
 const jest = require("jest");
 // TODO: create 3 classes (employee roles)
