@@ -22,6 +22,8 @@ To install necessary dependencies, run the following command:
 npm i
 install jest
 install inquirer
+
+npm run test (can be used to test application functionality)
 ~~~
 
 ## Usage
