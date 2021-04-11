@@ -1,30 +1,44 @@
 const { it } = require("@jest/globals");
-const internTest = require("../lib/intern");
+const Intern = require("../lib/intern");
 
-describe("displaySchool", () => {
-  it("School is displayed", () => {
-      const testSchool = "WashU";
-    // expect(new school("").visible).toBe(true);
-  });
+describe("displayIDMethod", () => {
+  it("Engineer ID is displayed", () => {
+      const testID = "890";
+      const testEmp = new Intern ("Bob", testID, "email@test")
+    expect(testEmp.getId()).toBe(testID);
+    });
 });
 
 describe("displayRole", () => {
-    it(" getRole() should return \"Intern\" ", () => {
+    it(" getRole() should return \"Employee\" ", () => {
         const testRole = "Intern";
-        // expect(new getRole).toEqual("Manager");
+        const testEmp = new Intern("Bob", 890, "email@test")
+        expect(testEmp.getRole()).toEqual(testRole);
     });
 });
 
 describe("displayName", () => {
-    it(" getName() should return \"XXXX\" ", () => {
+    it("getName() should return a name", () => {
         const testName = "Bob";
-        // expect(new getName).toEqual("XXXX");
+        const testEmp = new Intern(testName, 890, "email@test")
+        expect(testEmp.getName()).toEqual(testName);
     });
 })
 
 describe("displayEmail", () => {
-    it(" getEmail() should return \"XXXX\" ", () => {
+    it(" getEmail() should return an email ", () => {
         const testEmail = "test@gmail.com";
-        // expect(new getEmail).toEqual("XXXX");
+        const testEmp = new Intern("bob", 890, testEmail)
+        expect(testEmp.getEmail()).toEqual(testEmail);
     });
 })
+
+describe("displaySchool", () => {
+    it("getSchool returns engineers intern's school", () => {
+        const testSchool = "abc-xyz";
+        const testEmp = new Intern("bob", 890, "email@test", testSchool)
+        expect(testEmp.getSchool()).toEqual(testSchool);
+  });
+  });
+
+//   constructor(name, id, email, school) {
