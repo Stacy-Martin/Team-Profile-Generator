@@ -49,6 +49,6 @@ The following screenshot provides a preview of the Team Profile webpage that was
 
 Check out this video to see the app demo:
 
-https://drive.google.com/file/d/1QxADW6HsgHLC2L-CSCa1Do7d7z5vt4GR/view
+https://drive.google.com/file/d/1HdTqGNnP1tnToLZYOf-DwTXZ_u9OspjA/view?usp=sharing
 
 Thanks to my study buddies ;) teacher, and incredible TA (Katerina Poulos) for technical assistance - and many others for encouragement! 
