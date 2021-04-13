@@ -1,3 +1,4 @@
+// this is the basic HTML template with a tempate literal create card section
 function generateHTML(team) {
   return `<!DOCTYPE html>
   <html lang="en">
@@ -7,8 +8,7 @@ function generateHTML(team) {
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <!-- fontawesome stylesheet  -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
     <!-- Adobe fonts link -->
     <link rel="stylesheet" href="https://use.typekit.net/eno7gbo.css">
     <!-- my CSS stylesheet link -->
@@ -26,6 +26,7 @@ function generateHTML(team) {
   </html>`;
 }
 
+// puts the roles into the cards and assigns their classes based on user response
 const createCards = (team) => {
   let cardString = "";
   for (let i = 0; i < team.length; i++) {
@@ -39,10 +40,12 @@ const createCards = (team) => {
   }
   return cardString;
 };
+
+// create the card for the manager class
 const managerCard = (answers) => {
   return `<div class="card">
               <h1 class="name-header">${answers.name}</h1>
-              <h2 class="role-header2">${answers.getRole()}</h2>
+              <h2 class="role-header2"><i class="fas fa-user-secret"></i>  ${answers.getRole()}</h2>
               <ul class="list-group">
                   <li class="list-group-item">Employee ID: ${answers.id}</li>
                   <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
@@ -50,10 +53,12 @@ const managerCard = (answers) => {
               </ul>
           </div>`;
 };
+
+// create the card for the engineer class
 const engineerCard = (answers) => {
   return `<div class="card">
               <h1 class="name-header">${answers.name}</h1>
-              <h2 class="role-header2">${answers.getRole()}</h2>
+              <h2 class="role-header2"><i class="fas fa-user-ninja"></i>  ${answers.getRole()}</h2>
               <ul class="list-group">
                   <li class="list-group-item">Employee ID: ${answers.id}</li>
                   <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
@@ -61,10 +66,12 @@ const engineerCard = (answers) => {
               </ul>
           </div>`;
 };
+
+// create the card for the intern class
 const internCard = (answers) => {
   return `<div class="card">
               <h1 class="name-header">${answers.name}</h1>
-              <h2 class="role-header2">${answers.getRole()}</h2>
+              <h2 class="role-header2"><i class="fas fa-user-graduate"></i> ${answers.getRole()}</h2>
               <ul class="list-group">
                   <li class="list-group-item">Employee ID: ${answers.id}</li>
                   <li class="list-group-item">Email: <a href="mailto:${answers.email}" target="_blank">${answers.email}</a> </li>
@@ -73,4 +80,5 @@ const internCard = (answers) => {
           </div>`;
 };
 
+// export this file to be used be the index.js file
 module.exports = {generateHTML};

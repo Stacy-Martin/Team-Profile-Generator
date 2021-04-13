@@ -1,29 +1,19 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// TODO: create tests
 const jest = require("jest");
-// TODO: create 3 classes (employee roles)
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 const generateHTML = require("./src/template")
 const util = require("util");
 
-// create writeFile function using promises instead of a callback function
-// TODO: understand in more detail what this function does
-//const writeFileAsync = util.promisify(fs.writeFile);
 let team = [];
 
 // using writeFileAsync as a promise
-// TODO: understand in more detail what this function does
-// TODO: figure out how to append to the HTML, ? addHTML
-// TODO: figure out how to indicate when the HTML input is complete and ready to be rendered
-// probably use 'new' keyword to enter the new members
 const init = () => {
   addManager();
 };
 
-// TODO:  Add no content entered into all validations
 // User validations
 const validateName = (input) => {
   // if user input a number the app will stop
@@ -34,7 +24,6 @@ const validateName = (input) => {
   }
 };
 const validateNumber = (input) => {
-  // TODO: understand parseFloat's use here
   // if user input is not a number (parseFloat turns strings into numbers) the app will stop
   if ((input = isNaN(parseFloat(input)))) {
     return "Not a number, please try again";
@@ -62,8 +51,7 @@ const validateGithub = (input) => {
 // questions prompts for user
 const addManager = () => {
   inquirer
-    .prompt([
-      {
+    .prompt([{
         type: "input",
         name: "name",
         message: "Team manager name?",
@@ -105,14 +93,14 @@ const addManager = () => {
       );
       if (answers.moreMembers == "yes") {
         moreTeamMembers();
-      }
-      else{
+      } else {
         fs.writeFileSync("dist/index.html", generateHTML.generateHTML(team))
 
       }
     }).catch(err => console.log(err));
 };
 
+// if there are more team members to add, this pushes engineers and intern classes
 const moreTeamMembers = () => {
   return inquirer
     .prompt([{

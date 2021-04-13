@@ -27,7 +27,7 @@ npm run test (can be used to test application functionality)
 ~~~
 
 ## Usage
-First open the applications directory in the terminal and install the necessary dependencies.  Then begin inputting user data by entering  ` node . `.   After all employee prompts are complete, the HTML file will be generated and ready for use.  
+First open the applications directory in the terminal and install the necessary dependencies.  Then begin inputting user data by entering  ` node . ` in your bash.   After all employee prompts are complete, the HTML file will be generated and ready for use.  
 
 ## License 
 This project is licensed under the [License: Unlicense](http://unlicense.org/) license.
