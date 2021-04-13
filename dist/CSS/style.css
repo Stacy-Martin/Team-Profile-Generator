@@ -1,0 +1,46 @@
+body {
+    background-color:lightgray;
+}
+
+.card {
+    background-color: azure;
+    padding: 20px;
+    margin: 10px;
+    float:inherit;
+    width: 350px;
+    height: 250px;
+}
+
+.row {
+    margin: 20px;
+}
+
+h1 {
+    /* margin: 10px; */
+}
+
+.name-header {
+    font-family: aviano-flare, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333333;
+    margin: 10px;
+}
+
+.role-header2 {
+    font-family: aviano-flare, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    margin: 10px;
+}
+
+.list-group {
+    font-family: hero-new, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333
+}
