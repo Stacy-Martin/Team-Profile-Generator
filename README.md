@@ -44,10 +44,11 @@ To contribute to this repository, fork it and submit a pull request for review.
 
 The following screenshot provides a preview of the Team Profile webpage that was generated:
 
-![](https://github.com/Stacy-Martin/XXXXXX.png)
+![](https://raw.githubusercontent.com/Stacy-Martin/Team-Profile-Generator/main/Images%20/Screen%20Shot%202021-04-12%20at%208.03.08%20PM.png)
 
 
 Check out this video to see the app demo:
-XXXXXX
+
+https://drive.google.com/file/d/1QxADW6HsgHLC2L-CSCa1Do7d7z5vt4GR/view
 
 Thanks to my study buddies ;) teacher, and incredible TA (Katerina Poulos) for technical assistance - and many others for encouragement! 
